@@ -1,6 +1,5 @@
 services:
   postgres:
-    platform: linux/x86_64
     image: postgres:17
     container_name: postgres
     environment:
@@ -14,7 +13,6 @@ services:
     networks:
       - postgres-fastapi-nginx-network
   fastapi:
-    platform: linux/x86_64
     image: tyamadabiodataeng/fastapi
     container_name: fastapi
     build: 
@@ -34,7 +32,6 @@ services:
     networks:
       - postgres-fastapi-nginx-network
   nginx:
-    platform: linux/x86_64
     image: tyamadabiodataeng/fastapi-nginx
     container_name: nginx
     build: ./nginx
