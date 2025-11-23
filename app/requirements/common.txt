@@ -1,9 +1,14 @@
+structlog
+python-dotenv
 psycopg[binary]
+sqlalchemy
+pydantic
+sqlmodel
+sqlacodegen
+uvicorn[standard]
 fastapi[all]
 fastapi-users[sqlalchemy]
 fastapi-structlog
-uvicorn[standard]
-sqlmodel
 alembic
 sqladmin[full]
 strawberry-graphql[asgi, fastapi]
